@@ -1,5 +1,4 @@
 public enum OrderStatus
 {
-    Completed,
-    Cancelled
+    CREATED,COMPLETED,CANCELLED,REJECTED
 }
