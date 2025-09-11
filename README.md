@@ -29,7 +29,39 @@ Your expertise will directly impact how quickly and reliably customers receive t
 | DeliveryPartner | id, name, deliveries                                 |
 | Item            | id, name, description, price, category               |
 | Store           | storeId, zone, items                                 |
-| Order           | ** To be Implemented **                                                     | 
+| Order           | ** To be Implemented **                              |
+
+## Static Data
+
+**DistanceMap**
+
+| Zone One | Zone Two | Distance | 
+|----------|----------|----------|
+| ZONEA    | ZONEA    | 0        |
+| ZONEA    | ZONEB    | 3        |
+| ZONEA    | ZONEC    | 6        |
+| ZONEB    | ZONEC    | 3        |
+| ZONEB    | ZONEB    | 0        |
+| ZONEB    | ZONEC    | 8        |
+| ZONEC    | ZONEC    | 0        |
+
+**Stores**
+
+| StoreId | ZoneId | Items               |
+|---------|--------|---------------------|
+|  1      | ZoneA  | [Milk, Eggs, Bread] |
+|  2      | ZoneB  | [Bread, Milks ]     |
+|  3      | ZoneC  | [Juice, Bread ]     |
+
+**Items**
+
+| ItemId | Name     | Description | Price |
+|--------|----------|-------------|-------|
+|  1     | Notebook | ""          | 15    |
+|  2     | Keyboard | ""          | 50    |
+|  3     | Mouse    | ""          | 25    |
+|  4     | Monitor  | ""          | 75    |
+
 
 
 ## Technologies Used
@@ -64,3 +96,7 @@ Your expertise will directly impact how quickly and reliably customers receive t
 
 - .NET 8.0 SDK or later (https://dotnet.microsoft.com/download)
 - Compatible IDE (e.g., Visual Studio, Rider, VS Code)
+
+## Running SampleProblem Class
+A sample problem class is provided as a reference to demonstrate the structure and approach for solving the given problems. Using this as guidance, one can create their own class and implement the business logic accordingly.
+### Steps to run the SampleProblem
