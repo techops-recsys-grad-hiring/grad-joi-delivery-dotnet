@@ -19,6 +19,19 @@ JOI Delivery, launched in 2024, is a hyperlocal delivery app designed to bring f
 As JOI Delivery continues to grow and serve more neighborhoods, we’re scaling our platform to handle increasing demand, enhance user experience, and support smarter delivery logistics. They're looking for passionate developers to help us build robust, efficient, and scalable solutions that power everything from order placement to real-time tracking.
 Your expertise will directly impact how quickly and reliably customers receive their essentials—and how smoothly local vendors and delivery partners operate within our ecosystem.
 
+## Domain/Models available
+
+
+| Domain Name     | Attributes                                           |
+|-----------------|------------------------------------------------------|
+| Customer        | customerId, firstName, lastName, loyaltyPoints, tier |
+| Delivery        | id, timeInMinutes, diatance                          |
+| DeliveryPartner | id, name, deliveries                                 |
+| Item            | id, name, description, price, category               |
+| Store           | storeId, zone, items                                 |
+| Order           | ** To be Implemented **                                                     | 
+
+
 ## Technologies Used
 
 - **C# 12 / .NET 8.0**: Core backend language and framework
