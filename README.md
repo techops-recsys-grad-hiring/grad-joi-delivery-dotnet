@@ -100,3 +100,20 @@ Your expertise will directly impact how quickly and reliably customers receive t
 ## Running SampleProblem Class
 A sample problem class is provided as a reference to demonstrate the structure and approach for solving the given problems. Using this as guidance, one can create their own class and implement the business logic accordingly.
 ### Steps to run the SampleProblem
+**Right-click main Method:** Right-click anywhere within the main method (or on the class name in the project explorer) and select an option like
+```
+Select Run 'SampleProblem'
+```
+#### Running with the Command Line Interface (CLI)
+Open any Terminal to perform below commands. Change to the required directory.
+**Build the project:**
+```
+dotnet build
+```
+This compiles the ```.cs``` files into DLLs inside the ```bin``` folder.
+**Run the application:**
+```
+dotnet run
+```
+This executes the ```Main``` method inside your ```SampleProblem.cs``` file.
+
