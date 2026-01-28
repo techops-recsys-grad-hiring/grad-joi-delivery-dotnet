@@ -19,51 +19,6 @@ JOI Delivery, launched in 2024, is a hyperlocal delivery app designed to bring f
 As JOI Delivery continues to grow and serve more neighborhoods, we’re scaling our platform to handle increasing demand, enhance user experience, and support smarter delivery logistics. They're looking for passionate developers to help us build robust, efficient, and scalable solutions that power everything from order placement to real-time tracking.
 Your expertise will directly impact how quickly and reliably customers receive their essentials—and how smoothly local vendors and delivery partners operate within our ecosystem.
 
-## Domain/Models available
-
-
-| Domain Name     | Attributes                                           |
-|-----------------|------------------------------------------------------|
-| Customer        | customerId, firstName, lastName, loyaltyPoints, tier |
-| Delivery        | id, timeInMinutes, diatance                          |
-| DeliveryPartner | id, name, deliveries                                 |
-| Item            | id, name, description, price, category               |
-| Store           | storeId, zone, items                                 |
-| Order           | ** To be Implemented **                              |
-
-## Static Data
-
-**DistanceMap**
-
-| Zone One | Zone Two | Distance | 
-|----------|----------|----------|
-| ZONEA    | ZONEA    | 0        |
-| ZONEA    | ZONEB    | 3        |
-| ZONEA    | ZONEC    | 6        |
-| ZONEB    | ZONEC    | 3        |
-| ZONEB    | ZONEB    | 0        |
-| ZONEB    | ZONEC    | 8        |
-| ZONEC    | ZONEC    | 0        |
-
-**Stores**
-
-| StoreId | ZoneId | Items               |
-|---------|--------|---------------------|
-|  1      | ZoneA  | [Milk, Eggs, Bread] |
-|  2      | ZoneB  | [Bread, Milks ]     |
-|  3      | ZoneC  | [Juice, Bread ]     |
-
-**Items**
-
-| ItemId | Name     | Description | Price |
-|--------|----------|-------------|-------|
-|  1     | Notebook | ""          | 15    |
-|  2     | Keyboard | ""          | 50    |
-|  3     | Mouse    | ""          | 25    |
-|  4     | Monitor  | ""          | 75    |
-
-
-
 ## Technologies Used
 
 - **C# 12 / .NET 8.0**: Core backend language and framework
@@ -96,24 +51,4 @@ Your expertise will directly impact how quickly and reliably customers receive t
 
 - .NET 8.0 SDK or later (https://dotnet.microsoft.com/download)
 - Compatible IDE (e.g., Visual Studio, Rider, VS Code)
-
-## Running SampleProblem Class
-A sample problem class is provided as a reference to demonstrate the structure and approach for solving the given problems. Using this as guidance, one can create their own class and implement the business logic accordingly.
-### Steps to run the SampleProblem
-**Right-click main Method:** Right-click anywhere within the main method (or on the class name in the project explorer) and select an option like
-```
-Select Run 'SampleProblem'
-```
-#### Running with the Command Line Interface (CLI)
-Open any Terminal to perform below commands. Change to the required directory.
-**Build the project:**
-```
-dotnet build
-```
-This compiles the ```.cs``` files into DLLs inside the ```bin``` folder.
-**Run the application:**
-```
-dotnet run
-```
-This executes the ```Main``` method inside your ```SampleProblem.cs``` file.
 
