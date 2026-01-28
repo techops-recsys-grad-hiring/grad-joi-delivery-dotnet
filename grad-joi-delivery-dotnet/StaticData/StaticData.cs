@@ -1,29 +1,27 @@
-const DistanceMap = require("../model/DistanceMap");
-const Item = require("../model/Item");
-const Store = require("../model/Store");
+using grad_joi_delivery_dotnet.Models;
 
-class StaticData {
-  static ZONEA = "ZoneA";
-  static ZONEB = "ZoneB";
-  static ZONEC = "ZoneC";
+public class StaticData {
+  static string ZONEA = "ZoneA";
+  static string ZONEB = "ZoneB";
+  static string ZONEC = "ZoneC";
 
-  static distanceMap = [
-    new DistanceMap(SeedData.ZONEA, SeedData.ZONEA, 0),
-    new DistanceMap(SeedData.ZONEA, SeedData.ZONEB, 3),
-    new DistanceMap(SeedData.ZONEA, SeedData.ZONEC, 6),
-    new DistanceMap(SeedData.ZONEB, SeedData.ZONEC, 3),
-    new DistanceMap(SeedData.ZONEB, SeedData.ZONEB, 0),
-    new DistanceMap(SeedData.ZONEB, SeedData.ZONEC, 8),
-    new DistanceMap(SeedData.ZONEC, SeedData.ZONEC, 0),
+  static List<DistanceMap> distanceMap = [
+    new DistanceMap(ZONEA, ZONEA, 0),
+    new DistanceMap(ZONEA, ZONEB, 3),
+    new DistanceMap(ZONEA, ZONEC, 6),
+    new DistanceMap(ZONEB, ZONEC, 3),
+    new DistanceMap(ZONEB, ZONEB, 0),
+    new DistanceMap(ZONEB, ZONEC, 8),
+    new DistanceMap(ZONEC, ZONEC, 0),
   ];
 
-  static stores = [
-    new Store("1", SeedData.ZONEA, ["Milk", "Eggs", "Bread"]),
-    new Store("2", SeedData.ZONEB, ["Bread", "Milks"]),
-    new Store("3", SeedData.ZONEC, ["Juice", "Bread"]),
+  static List<Store> stores = [
+    new Store("1", ZONEA, ["Milk", "Eggs", "Bread"]),
+    new Store("2", ZONEB, ["Bread", "Milks"]),
+    new Store("3", ZONEC, ["Juice", "Bread"]),
   ];
 
-  static items = [
+  static List<Item> items = [
     new Item("1", "Notebook", "", 15),
     new Item("2", "Keyboard", "", 50),
     new Item("3", "Mouse", "", 25),
@@ -31,4 +29,3 @@ class StaticData {
   ];
 }
 
-module.exports = StaticData;

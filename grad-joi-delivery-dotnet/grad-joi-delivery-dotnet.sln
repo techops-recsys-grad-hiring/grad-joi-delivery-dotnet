@@ -1,6 +1,5 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grad-joi-delivery-dotnet", "grad-joi-delivery-dotnet\grad-joi-delivery-dotnet.csproj", "{D8635A7D-6ACE-43B3-B164-D36DE1A60931}"
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grad-joi-delivery-dotnet", "grad-joi-delivery-dotnet.csproj", "{D8635A7D-6ACE-43B3-B164-D36DE1A60931}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
