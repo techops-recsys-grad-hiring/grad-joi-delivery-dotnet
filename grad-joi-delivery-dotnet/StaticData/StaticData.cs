@@ -11,13 +11,12 @@ public class StaticData {
     new DistanceMap(ZONEA, ZONEC, 6),
     new DistanceMap(ZONEB, ZONEC, 3),
     new DistanceMap(ZONEB, ZONEB, 0),
-    new DistanceMap(ZONEB, ZONEC, 8),
     new DistanceMap(ZONEC, ZONEC, 0),
   ];
 
   static List<Store> stores = [
     new Store("1", ZONEA, ["Milk", "Eggs", "Bread"]),
-    new Store("2", ZONEB, ["Bread", "Milks"]),
+    new Store("2", ZONEB, ["Bread", "Milk"]),
     new Store("3", ZONEC, ["Juice", "Bread"]),
   ];
 
